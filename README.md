@@ -27,6 +27,21 @@ Một ứng dụng web gồm **API backend viết bằng Flask (Python)** và **
 
 ## 🗂️ Cấu trúc dự án
 
+```bash
+|   .gitignore
+|   README.md
+|
++---backend
+|   |   checking_password.py
+|   |   main.py
+|   |   requirements.txt
+|
+\---frontend
+        hidden-password.js
+        index.html
+        script.js
+```
+
 ---
 
 ## 📦 Cài đặt & chạy cục bộ
