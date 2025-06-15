@@ -2,3 +2,4 @@ Flask
 hibp
 zxcvbn
 flask-cors
+requests
