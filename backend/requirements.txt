@@ -3,3 +3,4 @@ hibp
 zxcvbn
 flask-cors
 requests
+gunicorn
