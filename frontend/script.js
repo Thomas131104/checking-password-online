@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const password = document.getElementById("password").value;
 
-        fetch("http://127.0.0.1:5000/api/check-password", {
+        fetch("https://checking-password-online-1.onrender.com/api/check-password", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
