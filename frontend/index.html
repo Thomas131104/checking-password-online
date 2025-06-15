@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra mật khẩu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        header, footer {
+            text-align: center;
+            background-color: #001f3f; /* Màu xanh đậm hơn nhưng dịu */
+            color: white; /* Chữ trắng để dễ đọc */
+            padding: 15px 10px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="password"] {
+            padding: 6px;
+            font-size: 1rem;
+            width: 60%;
+        }
+
+        button {
+            padding: 6px 12px;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        #togglePassword {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 40%;
+            white-space: nowrap;
+        }
+
+        #score {
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .score-0 { color: white; background-color: #d32f2f; }   /* Rất yếu */
+        .score-1 { color: white; background-color: #f57c00; }   /* Yếu */
+        .score-2 { color: white; background-color: #fbc02d; }   /* Trung bình */
+        .score-3 { color: white; background-color: #388e3c; }   /* Tốt */
+        .score-4 { color: white; background-color: #2e7d32; }   /* Rất tốt */
+    </style>
+</head>
+<body>
+    <header>
+        <h2>🔐 Kiểm tra độ mạnh của mật khẩu</h2>
+    </header>
+
+    <main>
+        <form id="checkingPassword">
+            <label for="password">Nhập mật khẩu:</label><br>
+            <input type="password" name="password" id="password" required>
+            <button type="button" id="togglePassword">👁️</button><br>
+
+            <button type="submit">Xác nhận mật khẩu</button>
+        </form>
+
+        <div id="answerCheckingPassword">
+            <table>
+                <tr>
+                    <td>🔢 Điểm số:</td>
+                    <td><span id="score"></span></td>
+                </tr>
+                <tr>
+                    <td>⏱️ Thời gian bẻ khóa:</td>
+                    <td><span id="time-to-break"></span></td>
+                </tr>
+                <tr>
+                    <td>📂 Đã từng bị rò rỉ?</td>
+                    <td><span id="data-breach"></span></td>
+                </tr>
+                <tr>
+                    <td>⚠️ Cảnh báo:</td>
+                    <td><span id="warning"></span></td>
+                </tr>
+                <tr>
+                    <td>💡 Lời khuyên:</td>
+                    <td><span id="advice"></span></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <h3>&copy; By Mus</h3>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="hidden-password.js"></script>
+</body>
+</html>

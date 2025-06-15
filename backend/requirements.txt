@@ -1,0 +1,4 @@
+Flask
+hibp
+zxcvbn
+flask-cors

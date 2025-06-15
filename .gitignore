@@ -1,0 +1,36 @@
+# Bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Flask instance folder (nếu dùng)
+instance/
+
+# Config/secret files
+.env
+*.env
+config.py
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Pipenv/Poetry lock file (nếu không dùng)
+Pipfile.lock
+poetry.lock
+
+
+.git
